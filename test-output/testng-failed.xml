@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [QARegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TestNGClass2">
+        <methods>
+          <include name="logoutFromTheApplication"/>
+          <include name="clearPOMObjects"/>
+          <include name="loginToApplication"/>
+          <include name="closeTheBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="sendFriendRequstToAtulGholap"/>
+          <include name="launchTheBrowser"/>
+        </methods>
+      </class> <!-- tests.TestNGClass2 -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.TestNGClass2">
+        <methods>
+          <include name="logoutFromTheApplication"/>
+          <include name="clearPOMObjects"/>
+          <include name="loginToApplication"/>
+          <include name="closeTheBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="sendFriendRequstToAtulGholap"/>
+          <include name="launchTheBrowser"/>
+        </methods>
+      </class> <!-- tests.TestNGClass2 -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [QARegressionSuite] -->
